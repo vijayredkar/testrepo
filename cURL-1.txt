@@ -1,0 +1,8 @@
+curl --request POST \
+  --url http://localhost:8888/genai/llm/creditcards \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"systemMsg":" You are an expert creditcards salesman You will be provided information on the available creditcards Your task is to find the creditcard that meets the user requirements best Here is the user requirement ",
+	"usrMsg":" Which card is best for cashback "
+	
+}'
